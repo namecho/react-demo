@@ -1,0 +1,27 @@
+.header-components {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    h1 {
+        margin-bottom: 0;
+        color: #fff;
+        line-height: 1;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .user-info {
+        span {
+            cursor: pointer;
+            &.username {
+                font-weight: bold;
+            }
+            &.logout {
+                margin-left: 10px;
+            }
+        }
+    }
+}
