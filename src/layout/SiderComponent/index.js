@@ -1,8 +1,9 @@
 import React from 'react'
 import { Menu } from 'antd'
+import { withRouter } from 'react-router-dom';
 
 const { SubMenu, Item } = Menu
-export default class SiderComponent extends React.Component {
+class SiderComponent extends React.Component {
     render() {
         return <Menu
             mode="inline"
@@ -20,6 +21,8 @@ export default class SiderComponent extends React.Component {
     }
 
     menuSelect(data) {
-        console.log(this.props);
+        this.props.history.push(data.key)
     }
 }
+
+export default withRouter(SiderComponent)

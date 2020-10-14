@@ -29,9 +29,9 @@ export default class App extends React.Component {
                     <Content>
                         <Switch>
                             <Route exact path="/" component={Home}></Route>
-                            <Route exact path="/config/log" component={Log}></Route>
-                            <Route exact path="/config/config" component={Config}></Route>
-                            <Route exact path="/config/status" component={Status}></Route>
+                            <Route exact path="/system/log" component={Log}></Route>
+                            <Route exact path="/system/config" component={Config}></Route>
+                            <Route exact path="/system/status" component={Status}></Route>
                         </Switch>
                     </Content>
                 </Layout>
